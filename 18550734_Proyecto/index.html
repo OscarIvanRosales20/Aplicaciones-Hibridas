@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="proyecto">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--    <link rel="stylesheet" href="./css/bootstrap.css" />
+-->
+    <link rel="stylesheet" href="./Css/Flow.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Canserbero</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+
+
+        <header>
+            <div class="image-text">
+
+                 <!--logo-->
+                <span class="image">
+                    <img src="./Imagenes/LOGO.jpg" alt="Logo">
+                </span>
+                
+                <div class="text header-text">
+                     <!--Pseudonombre y nombre-->
+                    <span class="name">Canserbero</span>
+                    <hr>
+                    <span class="unidad">Tyrone Jose <br>Gonzales Orama</span>
+                </div>
+            </div>
+            <i class='bx bx-chevrons-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            
+            <div class="menu">
+                 <!--Busqueda-->
+
+                <div class="Search">
+                    <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Search...">
+                    </li>
+                </div>
+                
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bxs-videos icon"></i>
+                            <span class="text nav-text">Videos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bxs-music icon"></i>
+                            <span class="text nav-text">Musica</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bxs-image icon"></i>
+                            <span class="text nav-text">Imagenes</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-history icon"></i>
+                            <span class="text nav-text">Historia</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toogle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="container" ng-controller="canController as Can">
+            <h2 class="text">Menu</h2>
+            <ul>
+                <li class="row" ng-repeat="Cancion in Can.Albums | filter:Cancion ">
+                    <div class="col-md-2">
+                        <img ng-src="{{Cancion.img}}" alt="Imagen del album" title="Imagen del album" class="img">
+                    </div>
+
+                    <div class="col-md-10">
+                        <div titulo></div>
+                         <br>
+                         <div anio></div>
+                         <br>
+                        <div editorial></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./js/Can.js"></script>
+    <script src="./js/Dark_Litgh.js"></script>
+    <script src="./js/app.js"></script>
+
+
+</body>
+</html>

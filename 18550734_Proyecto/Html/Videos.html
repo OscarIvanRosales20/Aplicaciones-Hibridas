@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href=".//Videos.html">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="Repro">
+        <video class="Video Viewer" src="../Videos/Canserbero - Mucho Gusto (subtítulos y ambientación)(1080P_HD).mp4"></video>
+
+        <div class="Controls">
+            <div class="Progreso">
+                <div class="barraProgreso"></div>
+            </div>
+            <button class="btn-Player toogle">
+                <box-icon name='play-circle'></box-icon>
+            </button>
+            <input type="range" name="Volume" class="player-slider" min="0" max="1" step=".05" value="1">
+            <button data-skip="-10" class="btn-Player"><< 10s</button>
+            <button data-skip="25" class="btn-Player">25s >></button>
+        </div>
+    </div>
+</body>
+</html>

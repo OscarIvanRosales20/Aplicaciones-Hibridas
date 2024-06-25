@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "titulo": "Ready",
+        "autor": "Tyrone Jose Gonzales orama",
+        "anio": "2010",
+        "img": "./Imagenes/Canserbero/Ready.jpg"
+    },
+    {
+        "id": "2",
+        "titulo": "Es pico",
+        "autor": "Tyrone Jose Gonzales orama",
+        "anio": "2012",
+        "img": "./Imagenes/Canserbero/Es pico.jpg"
+    },
+    {
+        "id": "3",
+        "titulo": "De venezuela",
+        "autor": "Tyrone Jose Gonzales orama",
+        "anio": "2999",
+        "img": "./Imagenes/Canserbero/De Venezuela.jpeg"
+    },
+    {
+        "id": "4",
+        "titulo": "Stupid Love Story",
+        "autor": "Tyrone Jose Gonzales orama",
+        "anio": "2010",
+        "img": "./Imagenes/Canserbero/Stupid Love Story.jpg"
+    }
+]
