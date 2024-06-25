@@ -1,0 +1,36 @@
+header{
+    background: url('../img/portada.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+
+header h1{
+    font-family: 'Montserrat',cursive;
+    color: #e4ab9a;
+}
+
+header .fondo-blanco{
+    background: rgba(255, 255, 255, .8);
+}
+
+h2{
+    font-family: 'Montserrat', cursive;
+    background: #e4ab9a;
+    color: #ffffff;
+}
+
+.precio{
+    color: #e4ab9a;
+}
+
+.btnRosa{
+    color: #ffffff;
+    background: #e4ab9a;
+    border: 1px solid #e4ab9a;
+}
+
+.btnWhats{
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+}
